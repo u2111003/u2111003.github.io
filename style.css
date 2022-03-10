@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/*font settings*/
+body {
+    background-color: #efefef;
+    color: #000;
+    font-family: sans-serif;
+}
+
+.center {text-align: center;}
+
+.left {text-align: left;}
+
+.right {text-align: right;}
+
+.sp_menuttl h2 {
+    font-family: 'Impact';
+    font-weight: normal;
+}
+
+/*media settings*/
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.movie_container {
+    position: relative;
+    z-index: -10;
+}
+
+video {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/*animation settings*/
+html {scroll-behavior: smooth;}
+
+/*a settings*/
+a {text-decoration: none;}
+
+a.anchor {
+    display: block;
+    padding-top: 3.84em;
+}
+
+/*menu settings*/
+.sp_menu {
+    height: 3.84em;
+    position: fixed;
+    display: table;
+    top: 0;
+    right: 0;
+}
+
+.sp_menubox {
+    background-color: #fff;
+    width: 250px;
+    max-width: 90%;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    transition: all 0.3s ease-in-out 0s;
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.sp_menuitem {
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+.sp_menuitem:first-child {height: 3.84em;}
+
+.sp_menuttl {text-align: center;}
+
+.sp_menuitem a {
+    width: 100%;
+    display: block;
+    padding: 30px 0;
+    text-align: center;
+}
+
+
+#drawer_checkbox:checked ~ .sp_menubox {
+    transform: translateX(0);
+    box-shadow: 6px 0 24px rgba(0,0,0,0.16);
+}
+
+#drawer_close {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    z-index: 39;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#drawer_checkbox:checked ~ #drawer_close {
+    display: block;
+    opacity: 0.3;
+}
+
+#drawer_checkbox {display: none;}
+
+#drawer_icon {
+    width: 50px;
+    height: 3.84em;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+#drawer_icon span {
+    width: 84%;
+    height: 13%;
+    background-color: #333;
+    border-radius: 4px;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin: -8% 0 0 -42%;
+    position: absolute;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#drawer_icon span:before,#drawer_icon span:after {
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(0);
+    border-radius: 4px;
+    content: "";
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin: -8% 0 0 -50%;
+    position: absolute;
+    transform: rotateX(0);
+    transition: all 0.75s ease-in-out;
+}
+
+#drawer_icon span:before {margin-top: -38%;}
+
+#drawer_icon span:after {margin-top: 19%;}
+
+#drawer_checkbox:checked ~ #drawer_icon span {background-color: rgba(51, 51, 51, 0);}
+
+#drawer_checkbox:checked ~ #drawer_icon span:before,#drawer_checkbox:checked ~ #drawer_icon span:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin: -8% 0 0 -42%;
+    position: absolute;
+}
+
+#drawer_checkbox:checked ~ #drawer_icon span:before {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#drawer_checkbox:checked ~ #drawer_icon span:after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*header settings*/
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 3.84em;
+    position: fixed;
+}
+
+h1.logo {
+    font-family: 'Impact';
+    font-weight: normal;
+    margin: 0;
+    padding: 0.25em 0;
+    text-align: center;
+}
+
+/*body settings*/
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#contents {
+    padding-top: 3.84em;
+    min-height: 100vh;
+}
+
+.contents_page {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.poster_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.poster_item {
+    width: 30%;
+}
+
+/*footer settings*/
+footer {
+    width: 100%;
+    height: 3.84em;
+}
+
+.author {line-height: 3.84em;}
+
+/*1080px以上のレイアウト*/
+@media screen and (min-width:1080px) {
+}
+
+/*1079px以下のレイアウト*/
+@media screen and (max-width:1079px) {
+    .contents_page {width: 70%;}
+}
+
+/*800px以下のレイアウト*/
+@media screen and (max-width:800px) {
+    .contents_page {width: 80%;}
+}
+
+/*500px以下のレイアウト*/
+@media screen and (max-width:500px) {
+    .contents_page {width: 85%;}
+}
