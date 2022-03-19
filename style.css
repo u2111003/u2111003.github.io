@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*font settings*/
 body {
     background-color: #efefef;
     color: #000;
@@ -17,7 +16,6 @@ body {
     font-weight: normal;
 }
 
-/*media settings*/
 img {
     width: 100%;
     vertical-align: middle;
@@ -33,18 +31,19 @@ video {
     vertical-align: middle;
 }
 
-/*animation settings*/
 html {scroll-behavior: smooth;}
 
-/*a settings*/
-a {text-decoration: none;}
+a {
+    color: #000;
+    text-decoration: none;
+}
 
 a.anchor {
     display: block;
+    margin-top: -3.84em;
     padding-top: 3.84em;
 }
 
-/*menu settings*/
 .sp_menu {
     height: 3.84em;
     position: fixed;
@@ -70,7 +69,8 @@ a.anchor {
 }
 
 .sp_menuitem {
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
     border-bottom: 1px solid;
 }
 
@@ -83,8 +83,13 @@ a.anchor {
     display: block;
     padding: 30px 0;
     text-align: center;
+    transition: 0.5s;
 }
 
+.sp_menuitem a:hover {
+    background-color: #000;
+    color: #fff;
+}
 
 #drawer_checkbox:checked ~ .sp_menubox {
     transform: translateX(0);
@@ -175,7 +180,6 @@ a.anchor {
     transform: rotate(45deg);
 }
 
-/*header settings*/
 header {
     background-color: #fff;
     width: 100%;
@@ -191,7 +195,6 @@ h1.logo {
     text-align: center;
 }
 
-/*body settings*/
 body {
     margin: 0;
     overflow-x: hidden;
@@ -209,6 +212,8 @@ body {
     flex-direction: column;
 }
 
+.template,.oneday,.office_media,.poster {margin-bottom: 50px;}
+
 .poster_box {
     display: flex;
     flex-direction: row;
@@ -219,7 +224,6 @@ body {
     width: 30%;
 }
 
-/*footer settings*/
 footer {
     width: 100%;
     height: 3.84em;
@@ -227,21 +231,16 @@ footer {
 
 .author {line-height: 3.84em;}
 
-/*1080px以上のレイアウト*/
-@media screen and (min-width:1080px) {
-}
+@media screen and (min-width:1080px) {}
 
-/*1079px以下のレイアウト*/
 @media screen and (max-width:1079px) {
     .contents_page {width: 70%;}
 }
 
-/*800px以下のレイアウト*/
 @media screen and (max-width:800px) {
     .contents_page {width: 80%;}
 }
 
-/*500px以下のレイアウト*/
 @media screen and (max-width:500px) {
     .contents_page {width: 85%;}
 }
