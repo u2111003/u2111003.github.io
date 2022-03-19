@@ -212,7 +212,7 @@ body {
     flex-direction: column;
 }
 
-.template,.oneday,.office_media,.poster {margin-bottom: 50px;}
+.template,.oneday,.poster {margin-bottom: 50px;}
 
 .poster_box {
     display: flex;
