@@ -311,5 +311,8 @@ footer {
 
 @media screen and (max-width:500px) {
     .contents_page {width: 85%;}
-    h1.logo {font-size: 3.6rem;}
+    h1.logo {
+        font-size: 3.6rem;
+        font-weight: bold;
+    }
 }
