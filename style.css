@@ -309,7 +309,7 @@ footer {
     br {display: none;}
     .poster_box {
         flex-wrap: wrap;
-        gap: 20px 0;
+        gap: 50px 0;
     }
     .poster_item {width: 45%;}
 }
