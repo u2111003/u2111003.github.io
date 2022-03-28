@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*font settings*/
 html {font-size: 62.5%;}
 
 body {
@@ -37,16 +36,13 @@ span.caution {
     font-weight: normal;
 }
 
-/*media settings*/
 img {
     width: 100%;
     vertical-align: middle;
 }
 
-/*animation settings*/
 html {scroll-behavior: smooth;}
 
-/*a settings*/
 a {
     color: #000;
     text-decoration: none;
@@ -68,7 +64,6 @@ a.anchor {
 
 .btn a:hover {background-color: #708090;}
 
-/*menu settings*/
 .sp_menu {
     height: 3.84em;
     position: fixed;
@@ -205,7 +200,6 @@ a.anchor {
     transform: rotate(45deg);
 }
 
-/*header settings*/
 header {
     background-color: #fff;
     width: 100%;
@@ -221,7 +215,6 @@ h1.logo {
     text-align: center;
 }
 
-/*body settings*/
 body {
     margin: 0;
     overflow-x: hidden;
@@ -249,7 +242,6 @@ body {
 
 .poster_item {width: 30%;}
 
-/*footer settings*/
 footer {
     width: 100%;
     height: 3.84em;
@@ -257,13 +249,11 @@ footer {
 
 .author {line-height: 3.84em;}
 
-/*1200px以上のレイアウト*/
 @media screen and (min-width:1200px) {
     h1 {font-size: 3.6rem;}
     h2 {font-size: 2.4rem;}
 }
 
-/*1080px以上のレイアウト*/
 @media screen and (min-width:1080px) {
     .cat_ttl {margin: 5rem 0;}
 
@@ -291,17 +281,14 @@ footer {
     }
 }
 
-/*1079px以下のレイアウト*/
 @media screen and (max-width:1079px) {
     .contents_page {width: 70%;}
 }
 
-/*800px以下のレイアウト*/
 @media screen and (max-width:800px) {
     .contents_page {width: 80%;}
 }
 
-/*640px以下のレイアウト*/
 @media screen and (max-width:640px) {
     body {line-height: 2;}
     h1 {font-size:2.4rem;}
@@ -314,7 +301,6 @@ footer {
     .poster_item {width: 45%;}
 }
 
-/*500px以下のレイアウト*/
 @media screen and (max-width:500px) {
     .contents_page {width: 85%;}
     h1.logo {
