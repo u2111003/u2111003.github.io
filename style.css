@@ -36,6 +36,11 @@ span.caution {
     font-weight: normal;
 }
 
+.tag {
+    color: #878787;
+    font-size: 1.5rem;
+}
+
 img {
     width: 100%;
     vertical-align: middle;
